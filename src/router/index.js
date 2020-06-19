@@ -22,6 +22,11 @@ Vue.use(VueRouter)
     path: '/new',
     name: 'new',
     component: () => import('../views/New.vue')
+  },
+  {
+    path: "/edit/:id",
+    name: 'Edit',
+    component: () => import('../views/Edit.vue')
   }
 ]
 
